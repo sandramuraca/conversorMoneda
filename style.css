@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(76, 102, 99) ;
+    
+}
+
+.conteiner{
+    background-color: rgb(201, 215, 248);
+    border: solid 1px rgb(128, 207, 169);
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.alingText{
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.panelMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs{
+    margin: 10px;
+}
+
+.select{
+    margin-left: 15px;
+}
+
+.button{
+    background-color:rgb(62, 163, 114);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: white;
+}

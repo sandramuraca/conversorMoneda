@@ -4,36 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>💵Conversor de Monedas💵</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <div class="conteiner">
-        <h1>CONVERSOR DE MONEDAS</h1>
-        <p>Por favor indique la moneda de origen y cantidad a convertir, verá el resultado en la moneda de destino.</p>
+        <h1 class="titulo alingText">CONVERSOR DE MONEDAS</h1>
+        <p class="alingText">Por favor indique la moneda de origen y cantidad a convertir, verá el resultado en la moneda de destino.</p>
 
-        <div class="panelMain">
+        <div class="panelMain" id="main">
 
-            <div id="origen">
+            <div id="origen" class="inputs">
                 <input
                  type="number"
                  id="inputArriba"
-                 placeholder="Ingrese Cantidad">
+                 placeholder="Ingrese Cantidad"
+                 >
 
-                <select name="" id="optionCambio1">
+                <select name="" id="optionCambio1" class="select">
                     <option value="cop">Peso Colombiano</option>
                     <option value="mxn">Peso Mexicano</option>
                     <option value="usd">Dolar Estadounidense</option>
                 </select>
             </div>
 
-            <div id="destino">
+            <div id="destino" class="inputs">
                 <input 
                 type="number"
                 id="inputAbajo"
                 placeholder="Ingrese Cantidad">
 
-                <select name="" id="optionCambio2">
+                <select name="" id="optionCambio2" class="select">
                     <option value="cop">Peso Colombiano</option>
                     <option value="mxn">Peso Mexicano</option>
                     <option value="usd">Dolar Estadounidense</option>
@@ -41,10 +43,12 @@
                 
             </div>
 
+            <button class="button" id="reset">Limpiar</button>
         </div>
-            <button id="reset">Limpiar</button>
-     </div>
-    
+
+        <img src="" alt="">
+    </div>
+     
 
     <script src="./app.js"></script>
 </body>
