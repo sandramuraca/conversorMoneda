@@ -8,17 +8,42 @@
 </head>
 <body>
     
-    <header>
+    <div class="conteiner">
         <h1>CONVERSOR DE MONEDAS</h1>
         <p>Por favor indique la moneda de origen y cantidad a convertir, verá el resultado en la moneda de destino.</p>
-    </header>
 
-    <main>
-        <input type="number" name="" id="">
-        <select name="" id=""></select>
-    </main>
-    
+        <div class="panelMain">
 
+            <div id="origen">
+                <input
+                 type="number"
+                 id="inputArriba"
+                 placeholder="Ingrese Cantidad">
+
+                <select name="" id="optionCambio1">
+                    <option value="cop">Peso Colombiano</option>
+                    <option value="mxn">Peso Mexicano</option>
+                    <option value="usd">Dolar Estadounidense</option>
+                </select>
+            </div>
+
+            <div id="destino">
+                <input 
+                type="number"
+                id="inputAbajo"
+                placeholder="Ingrese Cantidad">
+
+                <select name="" id="optionCambio2">
+                    <option value="cop">Peso Colombiano</option>
+                    <option value="mxn">Peso Mexicano</option>
+                    <option value="usd">Dolar Estadounidense</option>
+                </select>
+                
+            </div>
+
+        </div>
+            <button id="reset">Limpiar</button>
+     </div>
     
 
     <script src="./app.js"></script>
