@@ -24,7 +24,7 @@ const cambioUsd = (unidadOrigen, cantidad) => {
 
 //convertir de USD a moneda de destino
 const cambioFinal = (intermedio, monedaDestino) => {
-    let resultao;
+    let resultado;
     switch(monedaDestino) {
         case "cop":
           resultado = intermedio * 3747;
@@ -39,3 +39,25 @@ const cambioFinal = (intermedio, monedaDestino) => {
     return resultado;
 };
 
+inputArriba.addEventListener("input", ()=>{
+  if (optionArriba.value === optionAbajo.value){
+    inputAbajo.value = inputArriba.value;
+  } else{
+    let intermedio = cambioUsd(optionArriba.value, inputArriba.value);
+    inputAbajo.value = String(cambioFinal(intermedio, optionAbajo.value));
+  }
+});
+
+inputAbajo.addEventListener("input", ()=>{
+  if (optionArriba.value === optionAbajo.value){
+    inputArriba.value = inputAbajo.value;
+  } else{
+    let intermedio = cambioUsd(optionAbajo.value, inputAbajo.value);
+    inputArriba.value = String(cambioFinal(intermedio, optionArriba.value));
+  }
+});
+
+reset.addEventListener("click", ()=>{
+  inputArriba.value = "";
+  inputAbajo.value = "";
+});
